@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "notes-g",
-    "slug": "notes-g",
+    "name": "dontforget-g",
+    "slug": "dontforget-g",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -9,11 +9,14 @@
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#f4a226"
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
+    "extra": {
+      "fontFamily": {
+        "Monoton": "./assets/fonts/Monoton.ttf"
+      }
+    },
     "ios": {
       "supportsTablet": true
     },
