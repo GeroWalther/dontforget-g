@@ -6,7 +6,7 @@ import Btn from "./uiUtils/Btn";
 const Form = ({ onAddItems }) => {
   const [input, setInput] = useState("");
   const [select, setSelect] = useState(1);
-  const [hideNum, setHideNum] = useState(true);
+  const [hideNum, setHideNum] = useState(false);
 
   function handleHideNum() {
     setHideNum(!hideNum);
@@ -15,7 +15,12 @@ const Form = ({ onAddItems }) => {
   function handleSubmit() {
     if (!input) return;
     if (hideNum) {
-      const newItem1 = { input, select: null, packed: false, id: Date.now() };
+      const newItem1 = {
+        input,
+        select: null,
+        packed: false,
+        id: Date.now(),
+      };
       onAddItems(newItem1);
     } else {
       const newItem = { input, select, packed: false, id: Date.now() };
@@ -32,7 +37,6 @@ const Form = ({ onAddItems }) => {
       value: i + 1,
     })),
   ];
-
   return (
     <View style={styles.con}>
       <Text style={styles.txt}>What shouldn't you forget ?</Text>
@@ -59,9 +63,10 @@ const Form = ({ onAddItems }) => {
           style={[styles.input, hideNum && { width: "100%", marginLeft: 0 }]}
           placeholder="I shouldn`t forget to..."
           placeholderTextColor={"#7070"}
-          value={input}
+          value={input.trimStart()}
           onChangeText={setInput}
           multiline
+          autoCapitalize="none"
         />
       </View>
       <View style={{ flexDirection: "row" }}>

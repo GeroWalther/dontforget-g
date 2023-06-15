@@ -19,7 +19,8 @@ const Item = ({ item, onDeleteItem, onTogglePacking }) => {
       />
       <Pressable style={styles.itemTextContainer} onPress={handleTogglePacking}>
         <Text style={[styles.itemText, item.packed && styles.itemTextPacked]}>
-          {item.select ? item.select : null} {item.select ? "x  " : ""}
+          {item.select ? item.select : null}
+          {item.select ? "x  " : ""}
           {item.input}
         </Text>
       </Pressable>
