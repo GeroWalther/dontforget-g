@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "dontforget-g",
+    "name": "don't forget!",
     "slug": "dontforget-g",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -15,10 +15,15 @@
     "extra": {
       "fontFamily": {
         "Monoton": "./assets/fonts/Monoton.ttf"
+      },
+      "eas": {
+        "projectId": "27d5594b-daab-4ad9-8d72-7e9f7087a35e"
       }
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.waltherandstilling.dontforgetg1",
+      "buildNumber": "2"
     },
     "android": {
       "adaptiveIcon": {

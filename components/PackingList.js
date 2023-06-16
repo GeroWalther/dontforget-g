@@ -45,7 +45,7 @@ export default function PackingList({
           style={pickerSelectStyles}
           placeholder={{
             label: "Sort by...",
-            value: null,
+            value: "",
             color: "#9EA0A4",
             disabled: true,
           }}

@@ -47,7 +47,7 @@ const Form = ({ onAddItems }) => {
             value={select}
             placeholder={{
               label: "Select amount...",
-              value: null,
+              value: "",
               color: "#9EA0A4",
               disabled: true,
             }}

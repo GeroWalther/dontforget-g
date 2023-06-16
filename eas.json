@@ -1,0 +1,24 @@
+{
+  "cli": {
+    "version": ">= 2.4.1"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal"
+    },
+    "preview": {
+      "distribution": "internal"
+    },
+    "production": {}
+  },
+  "submit": {
+    "production": {
+      "ios": {
+        "appleId": "gero.walther@gmail.com",
+        "ascAppId": "6450320648",
+        "appleTeamId": "W67AW8RFW4"
+      }
+    }
+  }
+}
