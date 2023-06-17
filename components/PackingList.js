@@ -38,7 +38,7 @@ export default function PackingList({
         <RNPickerSelect
           value={sortBy}
           onValueChange={(value) => {
-            if (value !== null) {
+            if (value !== "") {
               setSortby(value);
             }
           }}

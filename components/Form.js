@@ -52,7 +52,7 @@ const Form = ({ onAddItems }) => {
               disabled: true,
             }}
             onValueChange={(value) => {
-              if (value !== null) {
+              if (value !== "") {
                 setSelect(value);
               }
             }}
