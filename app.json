@@ -2,7 +2,7 @@
   "expo": {
     "name": "don't forget!",
     "slug": "dontforget-g",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -23,16 +23,25 @@
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.waltherandstilling.dontforgetg1",
-      "buildNumber": "3"
+      "buildNumber": "5"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "backgroundColor": "#ffebb3"
       }
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/icon.png",
+          "color": "##ffebb3"
+        }
+      ]
+    ]
   }
 }
