@@ -74,8 +74,11 @@ const Item = ({ item, onDeleteItem, onTogglePacking }) => {
     }
   };
 
-  const openModal = () => {
-    setIsModalVisible(true);
+  const openModal = async () => {
+    const { status } = await Notifications.requestPermissionsAsync();
+    if (status === 'granted') {
+      setIsModalVisible(true);
+    } else return;
   };
 
   const handleModalClose = () => {
